@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .t1{
+            text-align: justify;
+        }
+        body{
+            background-color: rgb(205, 205, 207);
+        }
+    </style>
+</head>
+<body class="overflow-auto bg-gradient">
+
+    <!--  section 1 includung marquee  -->
+
+    <div class="text-center  ms-5 me-5 bg-warning p-4 pb-2 rounded-pill">
+        <h1 class="fs-1 fw-bold text-dark" >Welcome to GameZone</h1>
+            <div class="border border-white border-0 fs-4 fw-bold">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                      <a target="_blank" class="nav-link active" aria-current="page" href="https://www.callofduty.com/">Active</a>
+                    </li>
+                    <li class="nav-item">
+                      <a target="_blank" class="nav-link" href="https://www.ea.com/games/battlefield">Link1</a>
+                    </li>
+                    <li class="nav-item">
+                      <a target="_blank" class="nav-link" href="https://www.ea.com/games/need-for-speed">Link</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled">Disabled</a>
+                    </li>
+                  </ul>
+            </div>
+    </div><br>
+    <marquee class="marq text-center p-4 pt-0  fs-2 text-danger fw-bold" color="Green" direction="up"loop="">
+            <p>Join Us</p>
+    </marquee><br><br>
+
+    <!--  section 1 ends  -->
+
+    <!--  section 2 contains 2 coloumns with a figure  -->
+
+    <div class="container  mb-4 p-3">
+        <div class="row gx-5">
+          <div class="col ">
+           <p class="t1 fs-3 text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum ab quis amet inventore <span class="text-primary fst-italic">laborum ullam, totam, vero aperiam consequuntur </span> expedita, quas ipsam fugiat nemo sunt! Distinctio pariatur, vel doloremque eius excepturi necessitatibus sunt dolor, adipisci tempora corrupti consectetur totam minima ratione odit id, incidunt neque voluptate tenetur veritatis minus.</p>
+          </div>
+          <div class="col">
+            <img class="rounded-circle ms-5" src="Food.jpg" alt="" srcset="">
+          </div>
+        </div>
+    </div>
+
+    <!--  section 2 ends here  -->
+
+     <!--  section 3 starts. contains 2 tables in 2 coloumns  -->
+
+      <div>
+        <div class="row justify-content-center">
+            <div class="col-4">
+                <table class="table m-5  table-hover fs-5">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="1">Larry the Bird</td>
+                        <td>@twitter</td>
+                        <td>@fat</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+            <div class="col-4 ">
+                <table class="table m-5 justify-content-center table-hover table-striped fs-5">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="1">Larry the Bird</td>
+                        <td>@twitter</td>
+                        <td>@fat</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+          </div>
+      </div><br>
+
+       <!--  section 3 ends here  -->
+
+        <!--  section 4 starts here. contains file upload  -->
+
+      <form class="row g-2">
+        <input class="form-control form-control-lg w-50 mx-auto col-auto" id="formFileLg" type="file">
+        <button type="button" class="btn btn-success col-auto ps-3 pe-3 me-5">Success</button>
+      </form><br>
+
+       <!--  section 4 ends here  -->
+
+        <!--  section 5 starts here. contains a form -->
+
+      <div class="w-50 mx-auto ">
+        <div class="form-floating mb-3 shadow">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+            <div id="passwordHelpBlock" class="form-text">
+                Your email
+              </div>
+          </div>
+          <div class="form-floating shadow">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Password</label>
+            <div id="passwordHelpBlock" class="form-text">
+                Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+              </div>
+        </div><br>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+      </div><br>
+
+       <!--  section 5 ends here  -->
+
+       <!--  section 6 starts here. contains button group  -->
+
+       <div class=" btn-toolbar justify-content-center" role="toolbar" aria-label="Toolbar with button groups">
+        <div  class="btn-group me-2" role="group" aria-label="First group">
+          <a target="_blank" href="Simple-page/index.html"><button type="button" class="btn btn-primary">1</button></a>
+          <button type="button" class="btn btn-primary">2</button>
+          <button type="button" class="btn btn-primary">3</button>
+          <button type="button" class="btn btn-primary">4</button>
+        </div>
+        <div class="btn-group me-2" role="group" aria-label="Second group">
+          <button type="button" class="btn btn-secondary">5</button>
+          <button type="button" class="btn btn-secondary">6</button>
+          <button type="button" class="btn btn-secondary">7</button>
+        </div>
+        <div class="btn-group" role="group" aria-label="Third group">
+          <button type="button" class="btn btn-info">8</button>
+        </div>
+      </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script> 
+</body>
+</html>
